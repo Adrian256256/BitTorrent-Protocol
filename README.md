@@ -3,9 +3,7 @@
 **Author:** Harea Teodor-Adrian  
 **Title:** BitTorrent Protocol
 
-In this project, I implemented the BitTorrent protocol as described in the assignment specification. I closely followed the outlined steps to ensure correct functionality. After implementation, the test suite run by `./checker.sh` yielded maximum scores.
-
-Additionally, the efficiency of file transfers was considered. This was achieved by dividing download requests into intervals of 10 segments:
+The efficiency of file transfers was considered. This was achieved by dividing download requests into intervals of 10 segments:
 - For the first 5 segments: a random peer is selected. If the segment cannot be downloaded from this peer, a seeder is used.
 - For the next 5 segments: a random seeder is chosen directly for downloading.
 
